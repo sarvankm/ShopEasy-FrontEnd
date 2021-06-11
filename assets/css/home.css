@@ -1,47 +1,197 @@
-/* Icon 1 */
-#nav-icon1 {
-  width: 35px;
-  height: 27px;
-  position: relative;
-  margin-top: 93px;
-  margin-right: 10px;
-  transform: rotate(0deg);
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-  display: none; }
+.userinfo a {
+  text-decoration: none; }
 
-#nav-icon1 span {
+.userinfo .search-box {
+  background-color: none;
+  height: 40px;
+  border-radius: 40px;
+  margin-top: 10px; }
+
+.userinfo .search-box:hover > .search-txt {
+  width: 285px;
+  padding: 6px 12px; }
+
+.userinfo .search-box > .search-btn {
+  background-color: #fff; }
+
+.userinfo .search-btn {
+  color: #555970;
+  float: right;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  margin: 0; }
+
+.userinfo .search-txt {
+  border: none;
+  background: transparent;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  width: 0; }
+
+.userinfo .search-txt::placeholder {
+  color: white; }
+
+#menuToggle {
   display: block;
+  position: relative;
+  top: 53px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none; }
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
   position: absolute;
-  height: 5px;
-  width: 100%;
-  background: #555970;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: 0.25s ease-in-out; }
-
-#nav-icon1 span:nth-child(1) {
-  top: 0px; }
-
-#nav-icon1 span:nth-child(2) {
-  top: 11px; }
-
-#nav-icon1 span:nth-child(3) {
-  top: 22px; }
-
-#nav-icon1.open span:nth-child(1) {
-  top: 18px;
-  transform: rotate(135deg); }
-
-#nav-icon1.open span:nth-child(2) {
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
   opacity: 0;
-  left: -60px; }
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none; }
 
-#nav-icon1.open span:nth-child(3) {
-  top: 18px;
-  transform: rotate(-135deg); }
+/*
+  * Just a quick hamburger
+  */
+#menuToggle #line {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #555970;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+
+#menuToggle #line:first-child {
+  transform-origin: 0% 0%; }
+
+#menuToggle #line:nth-last-child(2) {
+  transform-origin: 0% 100%; }
+
+/* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #555970; }
+
+/*
+  * But let's hide the middle one.
+  */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2); }
+
+/*
+  * Ohyeah and the last one should go the other direction
+  */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px); }
+
+/*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+#menu {
+  position: absolute;
+  width: 1041px;
+  margin: 0 0 0 -135px;
+  padding: 50px;
+  padding-bottom: 0px;
+  padding-top: 20px;
+  padding-right: 0px;
+  background: #ffffff;
+  list-style-type: none;
+  overflow: scroll;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  #menu a {
+    margin-left: 85px;
+    display: flex;
+    align-items: center; }
+    #menu a span {
+      font-size: 32px; }
+    #menu a p {
+      padding-left: 10px; }
+    #menu a .comp {
+      padding-left: 2px; }
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px; }
+
+/*
+  * And let's slide it in from the left
+  */
+#menuToggle input:checked ~ ul {
+  transform: none; }
+
+.accordion-container {
+  position: relative;
+  width: 100%;
+  border-top: none;
+  outline: 0;
+  cursor: pointer; }
+
+.accordion-container .article-title {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0.625em 0.625em 0.625em 2em;
+  padding-left: 85px;
+  font-size: 1.25em;
+  font-weight: normal;
+  color: white;
+  cursor: pointer; }
+
+.accordion-container .article-title:active,
+.accordion-container .content-entry.open .article-title {
+  background-color: #9498a6;
+  color: white; }
+
+.accordion-container .content-entry .accordion-content .column {
+  margin-top: 10px; }
+
+.accordion-container .content-entry {
+  border-bottom: 1px solid white; }
+
+.accordion-container .article-title:hover i:before,
+.accordion-container .article-title:hover i:active {
+  color: white; }
+
+.accordion-content {
+  display: none;
+  padding-left: 85px;
+  color: white; }
+
+/* This stuff is just for the Codepen demo */
+#content {
+  width: 100%; }
+
+.accordion-container {
+  width: 100%; }
 
 .d-none {
   display: none; }
@@ -361,6 +511,13 @@ footer {
     top: 0; } }
 
 @media only screen and (max-width: 992px) {
+  footer hr {
+    display: none; }
+  .footercontainer .info {
+    display: none; }
+  .userinfo p,
+  .userinfo .search {
+    display: none; }
   #nav-icon1 {
     display: block; }
   .categorycontainer {
@@ -379,7 +536,6 @@ footer {
     padding-bottom: 40px;
     margin: 0;
     font-size: 22px; }
-  .footercontainer,
   .productcontainer,
   .secondcategorycontainer,
   .categorycontainer,

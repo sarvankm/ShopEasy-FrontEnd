@@ -1,21 +1,56 @@
-$(".hamburger").hide();
-// $("#hamburger").on("click", function (e) {
-//   e.preventDefault();
-//   $("#hamburger").addClass("d-none");
-//   $("#hamburgercross").addClass("rotate");
-//   $("#hamburgercross").removeClass("d-none");
-//   $(".hamburger").toggle();
+// $(".hamburger").hide();
+// $(document).ready(function () {
+//   $("#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4").click(function () {
+//     $(this).toggleClass("open");
+//     $(".hamburger").toggle();
+//   });
 // });
-// $("#hamburgercross").on("click", function (e) {
-//   e.preventDefault();
-//   $("#hamburger").removeClass("d-none");
-//   $("#hamburgercross").removeClass("rotate");
-//   $("#hamburgercross").addClass("d-none");
-//   $(".hamburger").toggle();
-// });
-$(document).ready(function () {
-  $("#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4").click(function () {
-    $(this).toggleClass("open");
-    $(".hamburger").toggle();
-  });
+$("input").on("click", function () {
+  if ($(this).is(":checked")) {
+    $(".carousel-control-prev").css("z-index", "auto");
+    $(".carousel-control-next").css("z-index", "auto");
+    $(".pointer-event").css("touch-action", "auto");
+  } else {
+    $(".carousel-control-prev").css("z-index", "1");
+    $(".carousel-control-next").css("z-index", "1");
+    $(".pointer-event").css("touch-action", "pan-y");
+  }
+});
+$(".search-box").on("click", function () {
+  $(".search-box").css("background", "#6D757A");
+});
+
+$(function () {
+  var Accordion = function (el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+
+    var links = this.el.find(".article-title");
+    links.on(
+      "click",
+      {
+        el: this.el,
+        multiple: this.multiple,
+      },
+      this.dropdown
+    );
+  };
+
+  Accordion.prototype.dropdown = function (e) {
+    var $el = e.data.el;
+    ($this = $(this)), ($next = $this.next());
+
+    $next.slideToggle();
+    $this.parent().toggleClass("open");
+
+    if (!e.data.multiple) {
+      $el
+        .find(".accordion-content")
+        .not($next)
+        .slideUp()
+        .parent()
+        .removeClass("open");
+    }
+  };
+  var accordion = new Accordion($(".accordion-container"), false);
 });
