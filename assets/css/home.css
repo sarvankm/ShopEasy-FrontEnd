@@ -2,6 +2,7 @@
   text-decoration: none; }
 
 .userinfo .search-box {
+  display: none;
   background-color: none;
   height: 40px;
   border-radius: 40px;
@@ -148,23 +149,28 @@
 #menuToggle input:checked ~ ul {
   transform: none; }
 
+.responsive-info {
+  display: none; }
+
 .accordion-container {
   position: relative;
   width: 100%;
   border-top: none;
   outline: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 70px; }
 
 .accordion-container .article-title {
   display: block;
   position: relative;
   margin: 0;
-  padding: 0.625em 0.625em 0.625em 2em;
+  padding: 20px;
   padding-left: 85px;
   font-size: 1.25em;
   font-weight: normal;
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: bold; }
 
 .accordion-container .article-title:active,
 .accordion-container .content-entry.open .article-title {
@@ -224,9 +230,8 @@ header .hamburger {
 
 header .secondpartheader .hamburgermenu {
   display: flex; }
-  header .secondpartheader .hamburgermenu i {
-    display: none;
-    padding: 10px; }
+  header .secondpartheader .hamburgermenu .navigation {
+    display: none; }
 
 header .secondpartheader a {
   position: relative; }
@@ -344,7 +349,7 @@ a {
   .secondcategorycontainer .secondpartcategory {
     font-size: 25px;
     margin-top: 44px;
-    background: #5c5858;
+    background: linear-gradient(to bottom right, #4c4e52 0%, #d1d1d1 100%);
     border-radius: 10px;
     color: white;
     width: 31%; }
@@ -353,6 +358,28 @@ a {
     padding-bottom: 85px; }
   .secondcategorycontainer img {
     width: 100%; }
+  .secondcategorycontainer .secondpartcategory.phone img {
+    width: 55%;
+    margin-left: 20%;
+    margin-top: -20px; }
+  .secondcategorycontainer .secondpartcategory.laptop img {
+    width: 100%;
+    margin-top: 30px; }
+  .secondcategorycontainer .secondpartcategory.tv img {
+    width: 86%;
+    margin-left: 30px;
+    margin-top: -25px; }
+  .secondcategorycontainer .secondpartcategory .accesories .firstimg {
+    width: 60%;
+    height: 60%;
+    margin-left: 25px; }
+  .secondcategorycontainer .secondpartcategory .accesories .secimg {
+    width: 57%;
+    margin-left: -120px;
+    margin-top: -30px; }
+  .secondcategorycontainer .secondpartcategory.gameconsole img {
+    width: 91%;
+    margin-left: 20px; }
   .secondcategorycontainer p {
     margin-left: 20px;
     margin-top: 10px; }
@@ -511,6 +538,14 @@ footer {
     top: 0; } }
 
 @media only screen and (max-width: 992px) {
+  .secondcategorycontainer .secondpartcategory.phone img {
+    width: 50%;
+    margin-left: 25%; }
+  .responsive-info {
+    display: block; }
+  #content h4,
+  #content p {
+    font-size: 14px; }
   footer hr {
     display: none; }
   .footercontainer .info {
@@ -518,6 +553,8 @@ footer {
   .userinfo p,
   .userinfo .search {
     display: none; }
+  .userinfo .search-box {
+    display: block; }
   #nav-icon1 {
     display: block; }
   .categorycontainer {
@@ -528,6 +565,8 @@ footer {
       display: block; }
     .secondpartheader .hamburgermenu .fa-times {
       display: block; }
+    .secondpartheader .hamburgermenu .navigation {
+      display: block !important; }
   .carouselcontainer img {
     height: 340px; }
   .secondcategorycontainer h3,
@@ -542,7 +581,7 @@ footer {
   .carouselcontainer,
   .secondpartheader,
   .firstpartheader {
-    max-width: 822px !important; }
+    max-width: 892px !important; }
   .secondcategorycontainer .secondpartcategory {
     width: 48%;
     margin-top: 44px; }
@@ -558,9 +597,55 @@ footer {
     display: none; } }
 
 @media only screen and (max-width: 768px) {
+  .productcontainer,
+  .secondcategorycontainer,
+  .categorycontainer,
+  .carouselcontainer,
+  .secondpartheader,
+  .firstpartheader {
+    max-width: 668px !important; }
   .productcontainer .forflex .productcard {
     width: 48%;
     margin-top: 25px; } }
+
+@media only screen and (max-width: 568px) {
+  .productcontainer,
+  .secondcategorycontainer,
+  .categorycontainer,
+  .carouselcontainer,
+  .secondpartheader,
+  .firstpartheader {
+    max-width: 368px !important; }
+  .productcontainer .forflex .productcard {
+    width: 100%;
+    margin-top: 25px; }
+  header .secondpartheader a,
+  header .secondpartheader p {
+    margin: 7px; }
+  header .secondpartheader img {
+    width: 110px;
+    height: 82px; }
+  #menuToggle {
+    top: 33px; }
+  .userinfo .search-box {
+    display: none; }
+  header .secondpartheader a,
+  header .secondpartheader p {
+    margin: 7px; }
+  .carouselcontainer img {
+    width: 530px;
+    height: 201px; }
+  footer .footerlogocontainer {
+    display: none; }
+  .accordion-container .article-title {
+    font-size: 14px; }
+  footer .contact {
+    display: block; }
+  footer .contact .mail,
+  footer .contact .location {
+    width: 100%; }
+  footer .contact .location p {
+    width: 45%; } }
 
 @media only screen and (max-width: 360px) {
   .productcontainer .forflex .productcard {

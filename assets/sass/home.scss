@@ -5,6 +5,7 @@
   }
 
   .search-box {
+    display: none;
     background-color: none;
     height: 40px;
     border-radius: 40px;
@@ -175,24 +176,29 @@
   transform: none;
 }
 // ==================================================
+.responsive-info {
+  display: none;
+}
 .accordion-container {
   position: relative;
   width: 100%;
   border-top: none;
   outline: 0;
   cursor: pointer;
+  margin-bottom: 70px;
 }
 
 .accordion-container .article-title {
   display: block;
   position: relative;
   margin: 0;
-  padding: 0.625em 0.625em 0.625em 2em;
+  padding: 20px;
   padding-left: 85px;
   font-size: 1.25em;
   font-weight: normal;
   color: white;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .accordion-container .article-title:active,
@@ -271,9 +277,8 @@ header {
   .secondpartheader {
     .hamburgermenu {
       display: flex;
-      i {
+      .navigation {
         display: none;
-        padding: 10px;
       }
     }
     a {
@@ -405,10 +410,11 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .secondpartcategory {
     font-size: 25px;
     margin-top: 44px;
-    background: rgb(92, 88, 88);
+    background: linear-gradient(to bottom right, #4c4e52 0%, #d1d1d1 100%);
     border-radius: 10px;
     color: white;
     width: 31%;
@@ -420,6 +426,46 @@ a {
 
   img {
     width: 100%;
+  }
+  .secondpartcategory.phone {
+    img {
+      width: 55%;
+      margin-left: 20%;
+      margin-top: -20px;
+    }
+  }
+  .secondpartcategory.laptop {
+    img {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  .secondpartcategory.tv {
+    img {
+      width: 86%;
+      margin-left: 30px;
+      margin-top: -25px;
+    }
+  }
+  .secondpartcategory {
+    .accesories {
+      .firstimg {
+        width: 60%;
+        height: 60%;
+        margin-left: 25px;
+      }
+      .secimg {
+        width: 57%;
+        margin-left: -120px;
+        margin-top: -30px;
+      }
+    }
+  }
+  .secondpartcategory.gameconsole {
+    img {
+      width: 91%;
+      margin-left: 20px;
+    }
   }
   p {
     margin-left: 20px;
@@ -624,6 +670,23 @@ footer {
   }
 }
 @media only screen and (max-width: 992px) {
+  .secondcategorycontainer {
+    .secondpartcategory.phone {
+      img {
+        width: 50%;
+        margin-left: 25%;
+      }
+    }
+  }
+  .responsive-info {
+    display: block;
+  }
+  #content {
+    h4,
+    p {
+      font-size: 14px;
+    }
+  }
   footer {
     hr {
       display: none;
@@ -640,6 +703,9 @@ footer {
     .search {
       display: none;
     }
+    .search-box {
+      display: block;
+    }
   }
   #nav-icon1 {
     display: block;
@@ -655,6 +721,9 @@ footer {
       }
       .fa-times {
         display: block;
+      }
+      .navigation {
+        display: block !important;
       }
     }
   }
@@ -679,7 +748,7 @@ footer {
   .carouselcontainer,
   .secondpartheader,
   .firstpartheader {
-    max-width: 822px !important;
+    max-width: 892px !important;
   }
   .secondcategorycontainer {
     .secondpartcategory {
@@ -711,6 +780,14 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  .productcontainer,
+  .secondcategorycontainer,
+  .categorycontainer,
+  .carouselcontainer,
+  .secondpartheader,
+  .firstpartheader {
+    max-width: 668px !important;
+  }
   .productcontainer {
     .forflex {
       .productcard {
@@ -720,6 +797,65 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 568px) {
+  .productcontainer,
+  .secondcategorycontainer,
+  .categorycontainer,
+  .carouselcontainer,
+  .secondpartheader,
+  .firstpartheader {
+    max-width: 368px !important;
+  }
+  .productcontainer {
+    .forflex {
+      .productcard {
+        width: 100%;
+        margin-top: 25px;
+      }
+    }
+  }
+  header .secondpartheader a,
+  header .secondpartheader p {
+    margin: 7px;
+  }
+  header .secondpartheader img {
+    width: 110px;
+    height: 82px;
+  }
+  #menuToggle {
+    top: 33px;
+  }
+  .userinfo .search-box {
+    display: none;
+  }
+  header .secondpartheader a,
+  header .secondpartheader p {
+    margin: 7px;
+  }
+  .carouselcontainer img {
+    width: 530px;
+    height: 201px;
+  }
+  footer .footerlogocontainer {
+    display: none;
+  }
+  .accordion-container .article-title {
+    font-size: 14px;
+  }
+  footer .contact {
+    display: block;
+  }
+  footer .contact .mail,
+  footer .contact .location {
+    width: 100%;
+  }
+  footer .contact .location {
+    p {
+      width: 45%;
+    }
+  }
+}
+
 @media only screen and (max-width: 360px) {
   .productcontainer {
     .forflex {
