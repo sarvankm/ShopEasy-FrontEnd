@@ -116,10 +116,7 @@
   position: absolute;
   width: 1041px;
   margin: 0 0 0 -135px;
-  padding: 50px;
-  padding-bottom: 0px;
   padding-top: 20px;
-  padding-right: 0px;
   background: #ffffff;
   list-style-type: none;
   overflow: scroll;
@@ -129,7 +126,7 @@
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
   #menu a {
-    margin-left: 85px;
+    margin-left: 100px;
     display: flex;
     align-items: center; }
     #menu a span {
@@ -529,6 +526,15 @@ footer {
       padding-left: 20px;
       padding-top: 10px; }
 
+.productcontainer,
+.secondcategorycontainer,
+.categorycontainer,
+.info,
+.secondpartheader,
+.firstpartheader {
+  max-width: 1290px;
+  padding: 20px !important; }
+
 @keyframes moveSlideshow {
   0% {
     left: 0%;
@@ -581,7 +587,7 @@ footer {
   .carouselcontainer,
   .secondpartheader,
   .firstpartheader {
-    max-width: 892px !important; }
+    max-width: 912px !important; }
   .secondcategorycontainer .secondpartcategory {
     width: 48%;
     margin-top: 44px; }
@@ -603,10 +609,12 @@ footer {
   .carouselcontainer,
   .secondpartheader,
   .firstpartheader {
-    max-width: 668px !important; }
+    max-width: 768px !important; }
   .productcontainer .forflex .productcard {
     width: 48%;
-    margin-top: 25px; } }
+    margin-top: 25px; }
+  #menu {
+    width: 853px; } }
 
 @media only screen and (max-width: 568px) {
   .productcontainer,
@@ -615,10 +623,29 @@ footer {
   .carouselcontainer,
   .secondpartheader,
   .firstpartheader {
-    max-width: 368px !important; }
-  .productcontainer .forflex .productcard {
-    width: 100%;
-    margin-top: 25px; }
+    max-width: 568px !important; }
+  #menu {
+    width: 684px; }
+  .secondcategorycontainer .secondpartcategory.phone img {
+    width: 60%;
+    margin-top: -6%;
+    margin-left: 20%; }
+  .secondcategorycontainer .secondpartcategory.tv img {
+    width: 90%;
+    margin-left: 9px;
+    margin-top: -12px; }
+  .secondcategorycontainer p {
+    font-size: 17px; }
+  .secondcategorycontainer .secondpartcategory .accesories .firstimg {
+    margin-left: 14px; }
+  .secondcategorycontainer .secondpartcategory .accesories .secimg {
+    margin-left: -60px;
+    margin-top: -12px; }
+  .productcontainer .forflex {
+    justify-content: center; }
+    .productcontainer .forflex .productcard {
+      width: 60%;
+      margin-top: 25px; }
   header .secondpartheader a,
   header .secondpartheader p {
     margin: 7px; }
@@ -643,11 +670,38 @@ footer {
     display: block; }
   footer .contact .mail,
   footer .contact .location {
-    width: 100%; }
+    width: 74%; }
   footer .contact .location p {
     width: 45%; } }
 
 @media only screen and (max-width: 360px) {
+  .productcontainer,
+  .secondcategorycontainer,
+  .categorycontainer,
+  .carouselcontainer,
+  .secondpartheader,
+  .firstpartheader {
+    max-width: 340px !important; }
+  header .linkcontainer .lastlink {
+    padding-right: 0px !important; }
+  footer .contact .mail,
+  footer .contact .location {
+    width: 100%; }
+  .secondcategorycontainer .secondpartcategory .accesories .secimg {
+    margin-left: -95px;
+    margin-top: -25px; }
+  .secondcategorycontainer p {
+    font-size: 20px; }
+  header .secondpartheader .userinfo {
+    margin-top: 10px; }
+  .productcontainer h3 {
+    padding: 65px; }
+  footer .contact .location p {
+    width: 52%; }
+  .carouselcontainer img {
+    height: 140px; }
+  #menu {
+    width: 475px; }
   .productcontainer .forflex .productcard {
     width: 100%; }
   .secondcategorycontainer .secondpartcategory {
