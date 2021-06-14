@@ -1,201 +1,3 @@
-.userinfo a {
-  text-decoration: none; }
-
-.userinfo .search-box {
-  display: none;
-  background-color: none;
-  height: 40px;
-  border-radius: 40px;
-  margin-top: 10px; }
-
-.userinfo .search-box:hover > .search-txt {
-  width: 285px;
-  padding: 6px 12px; }
-
-.userinfo .search-box > .search-btn {
-  background-color: #fff; }
-
-.userinfo .search-btn {
-  color: #555970;
-  float: right;
-  width: 41px;
-  height: 41px;
-  border-radius: 50%;
-  border: 1px solid white;
-  background-color: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-  margin: 0; }
-
-.userinfo .search-txt {
-  border: none;
-  background: transparent;
-  outline: none;
-  float: left;
-  padding: 0;
-  color: white;
-  font-size: 16px;
-  transition: 0.4s;
-  width: 0; }
-
-.userinfo .search-txt::placeholder {
-  color: white; }
-
-#menuToggle {
-  display: block;
-  position: relative;
-  top: 53px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none; }
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  /* hide this */
-  z-index: 2;
-  /* and place it over the hamburger */
-  -webkit-touch-callout: none; }
-
-/*
-  * Just a quick hamburger
-  */
-#menuToggle #line {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #555970;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
-
-#menuToggle #line:first-child {
-  transform-origin: 0% 0%; }
-
-#menuToggle #line:nth-last-child(2) {
-  transform-origin: 0% 100%; }
-
-/* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #555970; }
-
-/*
-  * But let's hide the middle one.
-  */
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2); }
-
-/*
-  * Ohyeah and the last one should go the other direction
-  */
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px); }
-
-/*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
-#menu {
-  position: absolute;
-  width: 1041px;
-  margin: 0 0 0 -135px;
-  padding-top: 20px;
-  background: #ffffff;
-  list-style-type: none;
-  overflow: scroll;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-  #menu a {
-    margin-left: 100px;
-    display: flex;
-    align-items: center; }
-    #menu a span {
-      font-size: 32px; }
-    #menu a p {
-      padding-left: 10px; }
-    #menu a .comp {
-      padding-left: 2px; }
-
-#menu li {
-  padding: 10px 0;
-  font-size: 22px; }
-
-/*
-  * And let's slide it in from the left
-  */
-#menuToggle input:checked ~ ul {
-  transform: none; }
-
-.responsive-info {
-  display: none; }
-
-.accordion-container {
-  position: relative;
-  width: 100%;
-  border-top: none;
-  outline: 0;
-  cursor: pointer;
-  margin-bottom: 70px; }
-
-.accordion-container .article-title {
-  display: block;
-  position: relative;
-  margin: 0;
-  padding: 20px;
-  padding-left: 85px;
-  font-size: 1.25em;
-  font-weight: normal;
-  color: white;
-  cursor: pointer;
-  font-weight: bold; }
-
-.accordion-container .article-title:active,
-.accordion-container .content-entry.open .article-title {
-  background-color: #9498a6;
-  color: white; }
-
-.accordion-container .content-entry .accordion-content .column {
-  margin-top: 10px; }
-
-.accordion-container .content-entry {
-  border-bottom: 1px solid white; }
-
-.accordion-container .article-title:hover i:before,
-.accordion-container .article-title:hover i:active {
-  color: white; }
-
-.accordion-content {
-  display: none;
-  padding-left: 85px;
-  color: white; }
-
-/* This stuff is just for the Codepen demo */
-#content {
-  width: 100%; }
-
-.accordion-container {
-  width: 100%; }
-
 .d-none {
   display: none; }
 
@@ -205,93 +7,6 @@
 .rotate {
   transition: 1s ease-in-out !important;
   transform: rotate(360deg); }
-
-header .firstpartheader {
-  display: flex;
-  color: white;
-  max-width: 1270px;
-  margin: 0 auto; }
-
-header .headercolor {
-  background: #6d757a; }
-
-header .hamburger {
-  margin: 0 auto;
-  margin-bottom: 60px; }
-  header .hamburger div {
-    width: 100%;
-    border-bottom: 1px solid #6d757a;
-    padding: 20px 100px; }
-  header .hamburger .lastchildhamburger {
-    border-bottom: 0px; }
-
-header .secondpartheader .hamburgermenu {
-  display: flex; }
-  header .secondpartheader .hamburgermenu .navigation {
-    display: none; }
-
-header .secondpartheader a {
-  position: relative; }
-
-header .secondpartheader .numberofproduct {
-  border-radius: 50%;
-  background: #fdc705;
-  color: white;
-  font-size: 12px;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 15px;
-  left: 12px; }
-
-header .secondpartheader img {
-  width: 200px;
-  height: 120px; }
-
-header .secondpartheader .userinfo {
-  display: flex; }
-
-header .secondpartheader a,
-header .secondpartheader p {
-  margin: 15px;
-  font-size: 20px;
-  color: #555970;
-  transition: 0.2s ease-in-out; }
-
-header .secondpartheader a:hover {
-  color: #5d99f1; }
-
-header .secondpartheader p {
-  margin-top: 12px;
-  font-size: 24px; }
-
-header .secondpartheader {
-  max-width: 1270px;
-  margin: 0 auto;
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 0; }
-
-header .linkcontainer a {
-  font-size: 12px;
-  color: white;
-  margin: 16px; }
-
-header .linkcontainer p {
-  padding: 11px;
-  padding-right: 60px;
-  margin: 0; }
-
-header .linkcontainer .lastlink {
-  padding-right: 60px !important; }
-
-header .logocontainer i {
-  padding-top: 18px !important; }
 
 a {
   text-decoration: none; }
@@ -467,74 +182,6 @@ a {
   height: 100%;
   background-color: #9498a6; }
 
-footer {
-  margin-top: 90px;
-  background: #6d757a; }
-  footer .footercontainer {
-    max-width: 1270px;
-    margin: 0 auto; }
-  footer .footerlogocontainer {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px; }
-    footer .footerlogocontainer i {
-      font-size: 35px;
-      margin: 20px;
-      color: white; }
-  footer .info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px; }
-    footer .info .column {
-      width: 23%;
-      color: white;
-      display: flex;
-      line-height: 0.6; }
-      footer .info .column .title {
-        font-weight: bold;
-        margin-bottom: 40px; }
-    footer .info .line {
-      width: 1px;
-      height: 45%;
-      background-color: white;
-      margin-left: 110px;
-      margin-top: 5px; }
-  footer hr {
-    background-color: white;
-    opacity: 1;
-    margin-top: 80px;
-    margin-bottom: 50px; }
-  footer .contact {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 50px; }
-    footer .contact .mail {
-      display: flex;
-      color: white;
-      align-items: center;
-      justify-content: center;
-      width: 48%; }
-    footer .contact .location {
-      display: flex;
-      color: white;
-      align-items: center;
-      justify-content: center;
-      width: 48%; }
-    footer .contact i {
-      font-size: 45px; }
-    footer .contact p {
-      padding-left: 20px;
-      padding-top: 10px; }
-
-.productcontainer,
-.secondcategorycontainer,
-.categorycontainer,
-.info,
-.secondpartheader,
-.firstpartheader {
-  max-width: 1290px;
-  padding: 20px !important; }
-
 @keyframes moveSlideshow {
   0% {
     left: 0%;
@@ -543,36 +190,24 @@ footer {
     left: -193.9%;
     top: 0; } }
 
+@media only screen and (max-width: 1300px) {
+  .productcontainer,
+  .secondcategorycontainer,
+  .categorycontainer {
+    max-width: 1290px;
+    padding: 20px !important; } }
+
 @media only screen and (max-width: 992px) {
   .secondcategorycontainer .secondpartcategory.phone img {
     width: 50%;
     margin-left: 25%; }
-  .responsive-info {
-    display: block; }
   #content h4,
   #content p {
     font-size: 14px; }
-  footer hr {
-    display: none; }
-  .footercontainer .info {
-    display: none; }
-  .userinfo p,
-  .userinfo .search {
-    display: none; }
-  .userinfo .search-box {
-    display: block; }
   #nav-icon1 {
     display: block; }
   .categorycontainer {
     display: none; }
-  .secondpartheader .hamburgermenu {
-    align-items: center; }
-    .secondpartheader .hamburgermenu .fa-bars {
-      display: block; }
-    .secondpartheader .hamburgermenu .fa-times {
-      display: block; }
-    .secondpartheader .hamburgermenu .navigation {
-      display: block !important; }
   .carouselcontainer img {
     height: 340px; }
   .secondcategorycontainer h3,
@@ -584,48 +219,30 @@ footer {
   .productcontainer,
   .secondcategorycontainer,
   .categorycontainer,
-  .carouselcontainer,
-  .secondpartheader,
-  .firstpartheader {
+  .carouselcontainer {
     max-width: 912px !important; }
   .secondcategorycontainer .secondpartcategory {
     width: 48%;
     margin-top: 44px; }
   .productcontainer .forflex .productcard {
-    width: 32%; }
-  .line {
-    margin-left: 60px !important; }
-  .linkcontainer p {
-    display: none; }
-  .linkcontainer .filials {
-    margin-left: 0px; }
-  .logocontainer {
-    display: none; } }
+    width: 32%; } }
 
 @media only screen and (max-width: 768px) {
   .productcontainer,
   .secondcategorycontainer,
   .categorycontainer,
-  .carouselcontainer,
-  .secondpartheader,
-  .firstpartheader {
+  .carouselcontainer {
     max-width: 768px !important; }
   .productcontainer .forflex .productcard {
     width: 48%;
-    margin-top: 25px; }
-  #menu {
-    width: 853px; } }
+    margin-top: 25px; } }
 
 @media only screen and (max-width: 568px) {
   .productcontainer,
   .secondcategorycontainer,
   .categorycontainer,
-  .carouselcontainer,
-  .secondpartheader,
-  .firstpartheader {
+  .carouselcontainer {
     max-width: 568px !important; }
-  #menu {
-    width: 684px; }
   .secondcategorycontainer .secondpartcategory.phone img {
     width: 60%;
     margin-top: -6%;
@@ -646,70 +263,27 @@ footer {
     .productcontainer .forflex .productcard {
       width: 60%;
       margin-top: 25px; }
-  header .secondpartheader a,
-  header .secondpartheader p {
-    margin: 7px; }
-  header .secondpartheader img {
-    width: 110px;
-    height: 82px; }
-  #menuToggle {
-    top: 33px; }
-  .userinfo .search-box {
-    display: none; }
-  header .secondpartheader a,
-  header .secondpartheader p {
-    margin: 7px; }
   .carouselcontainer img {
     width: 530px;
-    height: 201px; }
-  footer .footerlogocontainer {
-    display: none; }
-  .accordion-container .article-title {
-    font-size: 14px; }
-  footer .contact {
-    display: block; }
-  footer .contact .mail,
-  footer .contact .location {
-    width: 74%; }
-  footer .contact .location p {
-    width: 45%; } }
+    height: 201px; } }
 
 @media only screen and (max-width: 360px) {
   .productcontainer,
   .secondcategorycontainer,
   .categorycontainer,
-  .carouselcontainer,
-  .secondpartheader,
-  .firstpartheader {
+  .carouselcontainer {
     max-width: 340px !important; }
-  header .linkcontainer .lastlink {
-    padding-right: 0px !important; }
-  footer .contact .mail,
-  footer .contact .location {
-    width: 100%; }
   .secondcategorycontainer .secondpartcategory .accesories .secimg {
     margin-left: -95px;
     margin-top: -25px; }
   .secondcategorycontainer p {
     font-size: 20px; }
-  header .secondpartheader .userinfo {
-    margin-top: 10px; }
   .productcontainer h3 {
     padding: 65px; }
-  footer .contact .location p {
-    width: 52%; }
   .carouselcontainer img {
     height: 140px; }
-  #menu {
-    width: 475px; }
   .productcontainer .forflex .productcard {
     width: 100%; }
   .secondcategorycontainer .secondpartcategory {
     width: 100%;
-    margin-top: 44px; }
-  header .logocontainer {
-    display: none; }
-  header .linkcontainer p {
-    display: none; }
-  header .secondpartheader {
-    display: block; } }
+    margin-top: 44px; } }
