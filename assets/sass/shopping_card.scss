@@ -180,15 +180,25 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .title-card {
+    font-size: 25px;
+    font-weight: bold;
+  }
   .amountcontainer {
     width: 25%;
+    padding: 0 10px;
     button {
       width: 100%;
       padding: 15px 0;
       font-size: 18px;
-      border: 1px solid black;
+      border: 1px solid #d7d7d7;
       border-radius: 40px;
       margin-top: 20px;
+    }
+    .finish-order {
+      background-color: #86939e;
+      border: 1px solid #86939e;
+      color: white;
     }
     .amount {
       display: flex;
@@ -213,6 +223,15 @@ input {
           font-size: 20px;
         }
       }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .shopping-card-container {
+    flex-direction: column;
+    .amountcontainer {
+      width: 55%;
+      margin-top: 40px;
     }
   }
 }

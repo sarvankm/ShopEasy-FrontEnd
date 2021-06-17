@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -10,13 +13,7 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -24,13 +21,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/brend-logos.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/shopping_card.css ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
   </head>
   <body>
     <header>
@@ -94,8 +87,9 @@
               </ul>
             </div>
           </nav>
-          <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
-          
+          <a href="index.html">
+            <img src="assets/img/logo.png" alt="" />
+          </a>
         </div>
 
         <div class="userinfo">
@@ -114,7 +108,7 @@
               <i class="fas fa-search"></i>
             </a>
           </div>
-          <a href="form.html">
+          <a href="./form.html">
             <i class="far fa-user"></i>
           </a>
           <a href="">
@@ -125,244 +119,59 @@
             <i class="far fa-heart"></i>
             <div class="numberofproduct">0</div>
           </a>
-          <a href="" class="basket">
+          <a href="shopping-card.html" class="basket">
             <i class="fas fa-shopping-basket"></i>
             <div class="numberofproduct">0</div>
           </a>
         </div>
       </div>
     </header>
- <!-- shopping card start -->
- <div class="shopping-card-container">
-  <div class="shopping-cart">
-    <!-- Title -->
-    <div class="title-card">
-      Səbətim
-    </div>
-   
-    <!-- Product #1 -->
-    <div class="item">
-      <div class="buttons">
-        <span class="delete-btn">
-        </span>
-        <span class="like-btn">
-        </span>
+    <div class="carouselcontainer">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride=""
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="filials"> 
+                <h5>28 May Filialı</h5>
+                <p>Növbəti filial</p>
+            </div>
+               <div class="contact">
+                   <p>0999999999</p>
+                   <p>sarvankm@code.edu.az</p>
+                   <p>Bakı şəhər.,<br>
+                    Nəsimi Rayonu, 28 May ray., Dilarə <br> Əliyeva küçəsi</p>
+               </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/xiaomi_mi_10_thumb800.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+  
+            <div class="carousel-item">
+              <img
+                src="assets/img/apple_iphone_xr_main_1557728899647.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-   
-      <div class="image">
-        <img src="assets/img/item-1.png" alt="" />
-      </div>
-   
-      <div class="description">
-        <span>Common Projects</span>
-        <span>Bball High</span>
-        <span>White</span>
-      </div>
-   
-      <div class="quantity">
-        <button class="plus-btn" type="button" name="button">
-          <img src="assets/img/plus.svg" alt="" />
-        </button>
-        <input type="text" name="name" value="1">
-        <button class="minus-btn" type="button" name="button">
-          <img src="assets/img/minus.svg" alt="" />
-        </button>
-      </div>
-   
-      <div class="total-price">$549</div>
-    </div>
-   
-    <!-- Product #2 -->
-    <div class="item">
-      <div class="buttons">
-        <span class="delete-btn"></span>
-        <span class="like-btn"></span>
-      </div>
-   
-      <div class="image">
-        <img src="assets/img/item-1.png" alt=""/>
-      </div>
-   
-      <div class="description">
-        <span>Maison Margiela</span>
-        <span>Future Sneakers</span>
-        <span>White</span>
-      </div>
-   
-      <div class="quantity">
-        <button class="plus-btn" type="button" name="button">
-          <img src="assets/img/plus.svg" alt="" />
-        </button>
-        <input type="text" name="name" value="1">
-        <button class="minus-btn" type="button" name="button">
-          <img src="assets/img/minus.svg" alt="" />
-        </button>
-      </div>
-   
-      <div class="total-price">$870</div>
-    </div>
-   
-    <!-- Product #3 -->
-    <div class="item">
-      <div class="buttons">
-        <span class="delete-btn"></span>
-        <span class="like-btn"></span>
-      </div>
-   
-      <div class="image">
-        <img src="assets/img/item-1.png" alt="" />
-      </div>
-   
-      <div class="description">
-        <span>Our Legacy</span>
-        <span>Brushed Scarf</span>
-        <span>Brown</span>
-      </div>
-   
-      <div class="quantity">
-        <button class="plus-btn" type="button" name="button">
-          <img src="assets/img/plus.svg" alt="" />
-        </button>
-        <input type="text" name="name" value="1">
-        <button class="minus-btn" type="button" name="button">
-          <img src="assets/img/minus.svg" alt="" />
-        </button>
-      </div>
-   
-      <div class="total-price">$349</div>
-    </div>
-  </div>
-  <div class="amountcontainer">
-    <div class="amount">
-      <div class="titleamount">
-        <p>Məhsul sayı</p>
-        <p>Toplam Ödəniş</p>
-        <p></p>
-      </div>
-      <div class="count">
-        <p>1</p>
-        <p>79 azn</p>
-      </div>
-    </div>
-    <button>Alış verişə davam et</button>
-    <button class="finish-order">Sifarişi Tamamla</button>
-  </div>
- 
- </div>
- 
- <!-- shopping card end -->
- <div class="brendlogocontainer">
-  <div class="foranm">
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/apple.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/asus.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/bosch.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/lenovo.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/samsung.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/xiaomi.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/acer.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/braun.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/jbl.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/kitchenaid.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/Lg.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/philips.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/apple.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/asus.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/bosch.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/lenovo.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/samsung.png" alt="" />
-      </a>
-    </div>
-    <div class="logoline">
-      <div class="sideline"></div>
-      <a href="">
-        <img src="assets/img/xiaomi.png" alt="" />
-      </a>
-    </div>
-  </div>
-</div>
     <footer>
         <div class="footercontainer">
           <div class="footerlogocontainer">
@@ -485,16 +294,21 @@
         </div>
       </footer>
       <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-></script>
-<script src="assets/js/shopping_card.js"></script>
-</body>
-</html>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <script src="assets/js/hamburger.js"></script>
+    </body>
+  </html>
+  

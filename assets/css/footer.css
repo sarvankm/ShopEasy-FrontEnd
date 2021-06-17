@@ -24,12 +24,16 @@ footer {
       footer .info .column .title {
         font-weight: bold;
         margin-bottom: 40px; }
-    footer .info .line {
-      width: 1px;
-      height: 45%;
-      background-color: white;
-      margin-left: 110px;
-      margin-top: 5px; }
+      footer .info .column:first-child {
+        margin-left: 100px; }
+      footer .info .column .line {
+        width: 1px;
+        height: 45%;
+        background-color: white;
+        margin-left: 85px;
+        margin-top: 5px; }
+      footer .info .column:nth-child(3) .line {
+        margin-left: 110px; }
   footer hr {
     background-color: white;
     opacity: 1;

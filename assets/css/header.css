@@ -82,8 +82,6 @@ header {
     font-size: 12px;
     color: white;
     margin: 16px; }
-  header .linkcontainer .filials {
-    margin-left: 0px; }
   header .linkcontainer p {
     padding: 11px;
     padding-right: 60px;
@@ -217,7 +215,7 @@ header {
     padding: 20px !important; }
   .firstpartheader {
     padding: 0 20px !important; }
-  header .linkcontainer .filials {
+  header .linkcontainer .mainpage {
     margin-left: 5px; } }
 
 @media only screen and (max-width: 992px) {
@@ -242,8 +240,6 @@ header {
     margin-left: 60px !important; }
   .linkcontainer p {
     display: none; }
-  .linkcontainer .filials {
-    margin-left: 0px !important; }
   header #menu {
     width: 1067px; } }
 

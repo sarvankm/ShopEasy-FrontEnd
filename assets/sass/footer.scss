@@ -20,6 +20,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+
     .column {
       width: 23%;
       color: white;
@@ -29,13 +30,21 @@ footer {
         font-weight: bold;
         margin-bottom: 40px;
       }
-    }
-    .line {
-      width: 1px;
-      height: 45%;
-      background-color: white;
-      margin-left: 110px;
-      margin-top: 5px;
+      &:first-child {
+        margin-left: 100px;
+      }
+      .line {
+        width: 1px;
+        height: 45%;
+        background-color: white;
+        margin-left: 85px;
+        margin-top: 5px;
+      }
+      &:nth-child(3) {
+        .line {
+          margin-left: 110px;
+        }
+      }
     }
   }
   hr {

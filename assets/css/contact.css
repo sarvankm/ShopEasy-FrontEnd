@@ -1,0 +1,21 @@
+.carouselcontainer {
+  width: 750px;
+  height: 1010px;
+  background: #6d757a;
+  border-radius: 10px; }
+  .carouselcontainer img {
+    width: 750px;
+    height: 1010px; }
+  .carouselcontainer .filials {
+    position: relative;
+    padding-bottom: 90px; }
+    .carouselcontainer .filials h5 {
+      margin-top: 40px;
+      padding: 40px; }
+    .carouselcontainer .filials p {
+      position: absolute;
+      top: 0;
+      right: 100px;
+      padding: 40px; }
+  .carouselcontainer .contact p {
+    padding: 20px; }
