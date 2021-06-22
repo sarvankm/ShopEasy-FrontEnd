@@ -36,7 +36,10 @@ header {
     header .hamburger .lastchildhamburger {
       border-bottom: 0px; }
   header .secondpartheader .hamburgermenu {
-    display: flex; }
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%; }
     header .secondpartheader .hamburgermenu .navigation {
       display: none; }
   header .secondpartheader a {

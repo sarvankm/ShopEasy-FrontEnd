@@ -44,8 +44,7 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    padding: 20px;
-    padding-top: 35px;
+    padding-top: 20px;
     border: 1px solid #6d757a;
     background: #6d757a;
     color: white;
@@ -70,8 +69,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
-  .secondpartcategory {
+  a {
     font-size: 25px;
     margin-top: 44px;
     background: linear-gradient(to bottom right, #4c4e52 0%, #d1d1d1 100%);
@@ -79,6 +77,7 @@ a {
     color: white;
     width: 31%;
   }
+
   h3 {
     text-align: center;
     padding-bottom: 85px;
@@ -152,56 +151,61 @@ a {
   p {
     text-align: center;
   }
-  .productcard {
+  a {
     width: 23%;
     margin-top: 20px;
     box-shadow: 0 0 12px 0 #dadcdd;
     border-radius: 10px;
-    &:hover {
+    p {
+      color: #555970;
+    }
+    .productcard {
+      &:hover {
+        img {
+          width: 100%;
+          transform: scale(1.05);
+        }
+      }
+      .pricecontainer {
+        display: flex;
+        justify-content: center;
+      }
+      .price {
+        font-weight: bolder;
+      }
+      .currency {
+        font-size: 10px;
+        margin-top: 6px;
+      }
       img {
         width: 100%;
-        transform: scale(1.05);
+        transition: 0.6s ease-in-out;
       }
-    }
-    .pricecontainer {
-      display: flex;
-      justify-content: center;
-    }
-    .price {
-      font-weight: bolder;
-    }
-    .currency {
-      font-size: 10px;
-      margin-top: 6px;
-    }
-    img {
-      width: 100%;
-      transition: 0.6s ease-in-out;
-    }
-    .buttoncontainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      button {
-        padding: 5px 50px;
-        border-radius: 20px;
-        margin-bottom: 15px;
+      .buttoncontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+          padding: 5px 50px;
+          border-radius: 20px;
+          margin-bottom: 15px;
+        }
+        .cash {
+          background: #6d757a;
+          color: white;
+        }
+        .credit {
+          color: #6d757a;
+          border: 1px solid #6d757a;
+        }
       }
-      .cash {
-        background: #6d757a;
-        color: white;
-      }
-      .credit {
-        color: #6d757a;
-        border: 1px solid #6d757a;
-      }
-    }
-    .card-icon {
-      display: flex;
-      justify-content: flex-end;
-      i {
-        margin: 15px 8px;
-        color: #555970;
+      .card-icon {
+        display: flex;
+        justify-content: flex-end;
+        i {
+          margin: 15px 8px;
+          color: #555970;
+        }
       }
     }
   }
@@ -254,6 +258,43 @@ a {
     top: 0;
   }
 }
+input:focus {
+  outline-offset: -2px;
+}
+
+#submitsearch {
+  border: 1px solid rgb(138, 134, 134);
+  margin-left: -82px;
+  padding: 5px;
+  border-radius: 19px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 8px;
+  padding-top: 4px;
+
+  display: none;
+  box-shadow: 0 0 1px black;
+  margin-right: 110px;
+}
+
+#searchInput {
+  width: 100%;
+
+  border: 1px solid #6d757a;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-24.png");
+
+  background-position: 10px 7px;
+  background-repeat: no-repeat;
+  padding: 8px 20px 8px 40px;
+  -webkit-transition: width 0.8s ease-in-out;
+  transition: width 0.8s ease-in-out;
+  outline: none;
+  opacity: 0.9;
+}
+
 @media only screen and (max-width: 1300px) {
   .productcontainer,
   .secondcategorycontainer,
@@ -306,14 +347,14 @@ a {
     max-width: 912px !important;
   }
   .secondcategorycontainer {
-    .secondpartcategory {
+    a {
       width: 48%;
       margin-top: 44px;
     }
   }
   .productcontainer {
     .forflex {
-      .productcard {
+      a {
         width: 32%;
       }
     }
@@ -329,7 +370,7 @@ a {
   }
   .productcontainer {
     .forflex {
-      .productcard {
+      a {
         width: 48%;
         margin-top: 25px;
       }
@@ -366,7 +407,7 @@ a {
   .productcontainer {
     .forflex {
       justify-content: center;
-      .productcard {
+      a {
         width: 60%;
         margin-top: 25px;
       }
@@ -400,13 +441,13 @@ a {
   }
   .productcontainer {
     .forflex {
-      .productcard {
+      a {
         width: 100%;
       }
     }
   }
   .secondcategorycontainer {
-    .secondpartcategory {
+    a {
       width: 100%;
       margin-top: 44px;
     }

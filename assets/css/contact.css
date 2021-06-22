@@ -93,3 +93,15 @@
   margin-top: 150px; }
   .map iframe {
     width: 100%; }
+
+@media (max-width: 992px) {
+  .contactcontainer form {
+    display: none; }
+  .contactcontainer .carouselcontainer {
+    width: 100%; }
+    .contactcontainer .carouselcontainer .filials p {
+      display: none; }
+    .contactcontainer .carouselcontainer .contact .phone i,
+    .contactcontainer .carouselcontainer .contact .mail i,
+    .contactcontainer .carouselcontainer .contact .location i {
+      padding-left: 10px; } }

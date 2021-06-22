@@ -37,8 +37,7 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  padding: 20px;
-  padding-top: 35px;
+  padding-top: 20px;
   border: 1px solid #6d757a;
   background: #6d757a;
   color: white;
@@ -58,7 +57,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
-  .secondcategorycontainer .secondpartcategory {
+  .secondcategorycontainer a {
     font-size: 25px;
     margin-top: 44px;
     background: linear-gradient(to bottom right, #4c4e52 0%, #d1d1d1 100%);
@@ -110,43 +109,45 @@ a {
     padding: 70px; }
   .productcontainer p {
     text-align: center; }
-  .productcontainer .productcard {
+  .productcontainer a {
     width: 23%;
     margin-top: 20px;
     box-shadow: 0 0 12px 0 #dadcdd;
     border-radius: 10px; }
-    .productcontainer .productcard:hover img {
+    .productcontainer a p {
+      color: #555970; }
+    .productcontainer a .productcard:hover img {
       width: 100%;
       transform: scale(1.05); }
-    .productcontainer .productcard .pricecontainer {
+    .productcontainer a .productcard .pricecontainer {
       display: flex;
       justify-content: center; }
-    .productcontainer .productcard .price {
+    .productcontainer a .productcard .price {
       font-weight: bolder; }
-    .productcontainer .productcard .currency {
+    .productcontainer a .productcard .currency {
       font-size: 10px;
       margin-top: 6px; }
-    .productcontainer .productcard img {
+    .productcontainer a .productcard img {
       width: 100%;
       transition: 0.6s ease-in-out; }
-    .productcontainer .productcard .buttoncontainer {
+    .productcontainer a .productcard .buttoncontainer {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .productcontainer .productcard .buttoncontainer button {
+      .productcontainer a .productcard .buttoncontainer button {
         padding: 5px 50px;
         border-radius: 20px;
         margin-bottom: 15px; }
-      .productcontainer .productcard .buttoncontainer .cash {
+      .productcontainer a .productcard .buttoncontainer .cash {
         background: #6d757a;
         color: white; }
-      .productcontainer .productcard .buttoncontainer .credit {
+      .productcontainer a .productcard .buttoncontainer .credit {
         color: #6d757a;
         border: 1px solid #6d757a; }
-    .productcontainer .productcard .card-icon {
+    .productcontainer a .productcard .card-icon {
       display: flex;
       justify-content: flex-end; }
-      .productcontainer .productcard .card-icon i {
+      .productcontainer a .productcard .card-icon i {
         margin: 15px 8px;
         color: #555970; }
 
@@ -190,6 +191,37 @@ a {
     left: -193.9%;
     top: 0; } }
 
+input:focus {
+  outline-offset: -2px; }
+
+#submitsearch {
+  border: 1px solid #8a8686;
+  margin-left: -82px;
+  padding: 5px;
+  border-radius: 19px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 8px;
+  padding-top: 4px;
+  display: none;
+  box-shadow: 0 0 1px black;
+  margin-right: 110px; }
+
+#searchInput {
+  width: 100%;
+  border: 1px solid #6d757a;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-24.png");
+  background-position: 10px 7px;
+  background-repeat: no-repeat;
+  padding: 8px 20px 8px 40px;
+  -webkit-transition: width 0.8s ease-in-out;
+  transition: width 0.8s ease-in-out;
+  outline: none;
+  opacity: 0.9; }
+
 @media only screen and (max-width: 1300px) {
   .productcontainer,
   .secondcategorycontainer,
@@ -221,10 +253,10 @@ a {
   .categorycontainer,
   .carouselcontainer {
     max-width: 912px !important; }
-  .secondcategorycontainer .secondpartcategory {
+  .secondcategorycontainer a {
     width: 48%;
     margin-top: 44px; }
-  .productcontainer .forflex .productcard {
+  .productcontainer .forflex a {
     width: 32%; } }
 
 @media only screen and (max-width: 768px) {
@@ -233,7 +265,7 @@ a {
   .categorycontainer,
   .carouselcontainer {
     max-width: 768px !important; }
-  .productcontainer .forflex .productcard {
+  .productcontainer .forflex a {
     width: 48%;
     margin-top: 25px; } }
 
@@ -260,7 +292,7 @@ a {
     margin-top: -12px; }
   .productcontainer .forflex {
     justify-content: center; }
-    .productcontainer .forflex .productcard {
+    .productcontainer .forflex a {
       width: 60%;
       margin-top: 25px; }
   .carouselcontainer img {
@@ -282,8 +314,8 @@ a {
     padding: 65px; }
   .carouselcontainer img {
     height: 140px; }
-  .productcontainer .forflex .productcard {
+  .productcontainer .forflex a {
     width: 100%; }
-  .secondcategorycontainer .secondpartcategory {
+  .secondcategorycontainer a {
     width: 100%;
     margin-top: 44px; } }

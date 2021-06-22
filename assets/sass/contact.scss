@@ -113,3 +113,23 @@
     width: 100%;
   }
 }
+@media (max-width: 992px) {
+  .contactcontainer {
+    form {
+      display: none;
+    }
+    .carouselcontainer {
+      width: 100%;
+      .filials {
+        p {
+          display: none;
+        }
+      }
+      .contact .phone i,
+      .contact .mail i,
+      .contact .location i {
+        padding-left: 10px;
+      }
+    }
+  }
+}
