@@ -163,34 +163,6 @@ a {
     border-radius: 50px;
     font-size: 20px; }
 
-.brendlogocontainer {
-  margin-top: 120px;
-  overflow: hidden; }
-  .brendlogocontainer .foranm {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    animation: moveSlideshow 30s linear infinite; }
-  .brendlogocontainer .logoline {
-    display: flex; }
-    .brendlogocontainer .logoline img {
-      padding: 40px 60px; }
-
-.sideline {
-  width: 1px;
-  height: 100%;
-  background-color: #9498a6; }
-
-@keyframes moveSlideshow {
-  0% {
-    left: 0%;
-    top: 0; }
-  100% {
-    left: -193.9%;
-    top: 0; } }
-
 input:focus {
   outline-offset: -2px; }
 

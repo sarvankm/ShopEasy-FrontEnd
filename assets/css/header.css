@@ -25,7 +25,11 @@ header {
     max-width: 1270px;
     margin: 0 auto; }
   header .headercolor {
-    background: #6d757a; }
+    background: #6d757a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; }
   header .hamburger {
     margin: 0 auto;
     margin-bottom: 60px; }
@@ -80,7 +84,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0; }
+    padding: 25px 0;
+    margin-top: 50px; }
   header .linkcontainer a {
     font-size: 12px;
     color: white;

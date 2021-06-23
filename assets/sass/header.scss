@@ -7,6 +7,10 @@ header {
   }
   .headercolor {
     background: #6d757a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
   }
   .hamburger {
     margin: 0 auto;
@@ -78,6 +82,7 @@ header {
       justify-content: space-between;
       align-items: center;
       padding: 25px 0;
+      margin-top: 50px;
     }
   }
   .linkcontainer {
