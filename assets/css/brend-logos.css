@@ -73,3 +73,6 @@
 @media only screen and (max-width: 360px) {
   .brendlogocontainer .foranm {
     animation: moveSlideshow-res4 10s linear infinite; } }
+.nothing{
+  color: black;
+}
